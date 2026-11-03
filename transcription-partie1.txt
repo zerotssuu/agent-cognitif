@@ -1,0 +1,22 @@
+Question : Combien coûtent 3 claviers et 2 souris ?
+
+--- Tour 1 ---
+Pensée : il me faut le prix des claviers et des souris.
+Action : chercherPrix("clavier")
+Observation : 45
+
+--- Tour 2 ---
+Pensée : maintenant, je dois trouver le prix des souris.
+Action : chercherPrix("souris")
+Observation : 25
+
+--- Tour 3 ---
+Pensée : avec le prix des claviers et des souris, je peux calculer le total.
+Action : calculer("3 * 45 + 2 * 25")
+Observation : 185
+
+--- Tour 4 ---
+Pensée : j'ai la réponse
+Réponse : trois claviers et deux souris coûtent 185 $.
+
+✅ Réponse finale : trois claviers et deux souris coûtent 185 $.
