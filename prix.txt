@@ -1,0 +1,5 @@
+clavier;45
+souris;25
+ecran;189
+casque;60
+webcam;79
