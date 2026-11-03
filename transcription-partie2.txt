@@ -1,0 +1,80 @@
+Modèle : qwen2.5:3b | Budget : 300 jetons (1 jeton ≈ 4 caractères) | Mode : resume
+
+========== Tour 1 ==========
+Vous : Bonjour, je m'appelle Edan et mon budget est de 300 $. Retiens bien ces deux informations.
+Pensée : je connais la réponse
+Réponse : Bonjour Edan, j'ai noté que votre budget est de 300 $. Nous pouvons commencer à discuter de vos achats maintenant.
+[Mémoire : 64 / 300 jetons ████░░░░░░░░░░░░░░░░]
+
+========== Tour 2 ==========
+Vous : Combien coûtent 2 casques ?
+Pensée : il me faut le prix des casques.
+Action : chercherPrix("casque")
+Observation : 60
+Pensée : 2 casques coûteront 2 fois le prix d'un casque.
+Action : calculer("2 * 60")
+Observation : 120
+Pensée : j'ai la réponse
+Réponse : Deux casques coûtent 120 $.
+[Mémoire : 136 / 300 jetons █████████░░░░░░░░░░░]
+
+========== Tour 3 ==========
+Vous : Et combien coûte une webcam ?
+Pensée : il me faut le prix de la webcam.
+Action : chercherPrix("webcam")
+Observation : 79
+Pensée : j'ai la réponse
+Réponse : Une webcam coûte 79 $.
+[Mémoire : 182 / 300 jetons ████████████░░░░░░░░]
+
+========== Tour 4 ==========
+Vous : Si j'achète 2 casques et une webcam, combien je dépense au total ?
+Pensée : je dois calculer le total en ajoutant le prix des 2 casques et le prix de la webcam.
+Action : calculer("2 * 60 + 79")
+Observation : 199
+Pensée : j'ai la réponse
+Réponse : L'achat de 2 casques et d'une webcam coûte 199 $.
+[Mémoire : 258 / 300 jetons █████████████████░░░]
+
+========== Tour 5 ==========
+Vous : Est-ce que ça entre dans mon budget ? Combien me resterait-il ?
+Pensée : je dois calculer combien reste de mon budget après l'achat de 2 casques et d'une webcam.
+Action : calculer("300 - 199")
+Observation : 101
+Pensée : j'ai la réponse
+Réponse : Après l'achat de 2 casques et d'une webcam, vous resterez avec un budget de 101 $.
+[Mémoire : 342 / 300 jetons ████████████████████]
+
+⚠️  Budget dépassé (342 > 300).
+📝 Résumé produit par le modèle :
+   Le prénom de l'utilisateur est Edan avec un budget de 300$. Les casques coûtent 60$ chacun, ce qui fait 120$ pour deux. Une webcam coûte 79$. L'achat de deux casques et d'une webcam totalise 199$. Après cet achat, Edan restera avec un budget de 101$.
+
+[Mémoire après : 85 / 300 jetons █████░░░░░░░░░░░░░░░]
+
+========== Tour 6 ==========
+Vous : Combien coûtent 3 claviers et 2 souris ?
+Pensée : je vais calculer le prix des claviers et des souris, puis les additionner.
+Action : chercherPrix("clavier")
+Observation : 45
+Pensée : j'ai le prix d'un clavier, maintenant je dois trouver le prix d'une souris.
+Action : chercherPrix("souris")
+Observation : 25
+Pensée : j'ai le prix d'un clavier et d'une souris. Maintenant, je peux calculer le coût de 3 claviers et 2 souris.
+Action : calculer("3 * 45 + 2 * 25")
+Observation : 185
+Pensée : j'ai la réponse
+Réponse : trois claviers et deux souris coûtent 185 $.
+[Mémoire : 225 / 300 jetons ███████████████░░░░░]
+
+========== Tour 7 ==========
+Vous : Combien coûte une souris ?
+Pensée : je connais la réponse
+Réponse : Une souris coûte 25 $.
+[Mémoire : 250 / 300 jetons ████████████████░░░░]
+
+========== Tour 8 ==========
+Vous : Pour finir : quel est mon prénom et quel est mon budget ?
+Pensée : je retiens que ton prénom est Edan et que ton budget est de 300$.
+Réponse : Ton prénom est Edan et ton budget est de 300$.
+[Mémoire : 300 / 300 jetons ████████████████████]
+

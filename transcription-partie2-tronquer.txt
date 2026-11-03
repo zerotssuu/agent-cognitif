@@ -1,0 +1,101 @@
+Modèle : qwen2.5:3b | Budget : 300 jetons (1 jeton ≈ 4 caractères) | Mode : tronquer
+
+========== Tour 1 ==========
+Vous : Bonjour, je m'appelle Edan et mon budget est de 300 $. Retiens bien ces deux informations.
+Pensée : je connais la réponse
+Réponse : Bonjour Edan, j'ai noté que votre budget est de 300 $. Nous pouvons commencer à discuter de vos achats maintenant.
+[Mémoire : 64 / 300 jetons ████░░░░░░░░░░░░░░░░]
+
+========== Tour 2 ==========
+Vous : Combien coûtent 2 casques ?
+Pensée : il me faut le prix des casques.
+Action : chercherPrix("casque")
+Observation : 60
+Pensée : 2 casques coûteront 2 fois le prix d'un casque.
+Action : calculer("2 * 60")
+Observation : 120
+Pensée : deux casques coûtent 120 $.
+Réponse : Deux casques coûtent 120 $.
+[Mémoire : 139 / 300 jetons █████████░░░░░░░░░░░]
+
+========== Tour 3 ==========
+Vous : Et combien coûte une webcam ?
+Pensée : il me faut le prix de la webcam.
+Action : chercherPrix("webcam")
+Observation : 79
+Pensée : la webcam coûte 79 $.
+Réponse : La webcam coûte 79 $.
+[Mémoire : 187 / 300 jetons ████████████░░░░░░░░]
+
+========== Tour 4 ==========
+Vous : Si j'achète 2 casques et une webcam, combien je dépense au total ?
+Pensée : je dois calculer le total en ajoutant le prix des casques et la webcam.
+Action : calculer("2 * 60 + 79")
+Observation : 199
+Pensée : le total pour 2 casques et une webcam est de 199 $.
+Réponse : L'achat de 2 casques et d'une webcam coûte 199 $.
+[Mémoire : 268 / 300 jetons █████████████████░░░]
+
+========== Tour 5 ==========
+Vous : Est-ce que ça entre dans mon budget ? Combien me resterait-il ?
+Pensée : je dois calculer combien reste dans votre budget après l'achat des casques et de la webcam.
+Action : calculer("300 - 199")
+Observation : 101
+Pensée : après l'achat des casques et de la webcam, vous restez avec 101 $ dans votre budget.
+Réponse : Après l'achat de 2 casques et d'une webcam, vous resterez avec 101 $ dans votre budget.
+[Mémoire : 372 / 300 jetons ████████████████████]
+
+⚠️  Budget dépassé (372 > 300).
+✂️  3 vieux messages oubliés pour repasser sous le budget.
+
+[Mémoire après : 298 / 300 jetons ███████████████████░]
+
+========== Tour 6 ==========
+Vous : Combien coûtent 3 claviers et 2 souris ?
+Pensée : il me faut le prix des claviers et des souris.
+Action : chercherPrix("clavier")
+Action : chercherPrix("souris")
+Observation : 45
+Pensée : j'ai besoin du prix d'une souris maintenant.
+Action : chercherPrix("souris")
+Observation : 25
+Pensée : avec le prix d'une souris connu, je peux calculer le total.
+Action : calculer("3 * 45 + 2 * 25")
+Observation : 185
+Pensée : le total pour 3 claviers et 2 souris est de 185 $.
+Réponse : L'achat de 3 claviers et de 2 souris coûte 185 $.
+[Mémoire : 430 / 300 jetons ████████████████████]
+
+⚠️  Budget dépassé (430 > 300).
+✂️  10 vieux messages oubliés pour repasser sous le budget.
+
+[Mémoire après : 298 / 300 jetons ███████████████████░]
+
+========== Tour 7 ==========
+Vous : Combien coûte une souris ?
+Pensée : je dois utiliser l'outil chercherPrix pour obtenir le prix d'une souris.
+Action : chercherPrix("souris")
+Observation : 25
+Pensée : j'ai la réponse sur le prix d'une souris.
+Réponse : Une souris coûte 25 $.
+[Mémoire : 360 / 300 jetons ████████████████████]
+
+⚠️  Budget dépassé (360 > 300).
+✂️  3 vieux messages oubliés pour repasser sous le budget.
+
+[Mémoire après : 297 / 300 jetons ███████████████████░]
+
+========== Tour 8 ==========
+Vous : Pour finir : quel est mon prénom et quel est mon budget ?
+Pensée : je dois trouver votre prénom et votre budget pour répondre à votre question.
+Action : chercherPrix("")
+Observation : Erreur : produit «  » introuvable
+Pensée : Il semblerait que l'outil chercherPrix ne puisse pas être utilisé pour obtenir votre prénom ou votre budget directement. Je vais devoir vous demander ces informations directement.
+Réponse : Pouvez-vous me donner votre prénom et votre budget s'il vous plaît ?
+[Mémoire : 421 / 300 jetons ████████████████████]
+
+⚠️  Budget dépassé (421 > 300).
+✂️  6 vieux messages oubliés pour repasser sous le budget.
+
+[Mémoire après : 275 / 300 jetons ██████████████████░░]
+
